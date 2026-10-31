@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#222222" />
+    <title>Sistema de Triagem Inteligente</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body class="app-body">
+    <header class="app-header">
+      <div class="brand">
+        <span class="brand-mark">+</span>
+        <span>Sistema de Triagem Inteligente</span>
+      </div>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <button class="nav-button active" data-screen="cadastro">
+          Cadastrar<br />Paciente
+        </button>
+        <button class="nav-button" data-screen="fila">
+          Fila de<br />Atendimento
+        </button>
+        <button class="nav-button" data-screen="historico">
+          Histórico de<br />Atendimentos
+        </button>
+        <button class="nav-button" data-screen="relatorios">
+          Relatórios &amp;<br />Estatísticas
+        </button>
+      </nav>
+      <div class="external-panels">
+        <a href="/painel.html" target="_blank" rel="noopener"
+          >Painel da sala de espera ↗</a
+        >
+        <a href="/chamada.html" target="_blank" rel="noopener"
+          >Painel de chamada ↗</a
+        >
+      </div>
+    </header>
+
+    <main id="screen-root" class="screen-root">
+      <section class="loading-state">Carregando sistema...</section>
+    </main>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <footer class="app-footer">
+      Sistema de Triagem Inteligente · Projeto Integrador III · Ambiente
+      acadêmico
+    </footer>
+  </body>
+</html>
